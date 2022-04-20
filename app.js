@@ -299,3 +299,4 @@ const App = (function(ItemCtrl, UICtrl, StorageCtrl){
 
 // Init. app
 App.init();
+// tegelt on kõik juba tehtud
