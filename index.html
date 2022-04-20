@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Calorie Tracker</title>
+</head>
+<body>
+<!-- Navbar with the title logo-->
+<nav>
+    <div class="nav-wrapper green">
+        <div class="container">
+            <a href="#" class="brand-logo center">Track Your Calories</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Form to submit your calorie intake -->
+<div class="container">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Add Meal / Food Item</span>
+            <form class="col">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="Add Item" id="itemName">
+                        <label for="itemName">Meal</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input type="number" placeholder="Add Calories" id="itemCalories">
+                        <label for="itemCalories">Calories</label>
+                    </div>
+                    <button class="add-btn btn green darken-3"><i class="fa fa-plus"></i> Add meal</button>
+                    <button class="cancel-update-btn btn orange darken-3" style="display: none"><i class="fas fa-undo"></i> Cancel update</button>
+                    <button class="update-btn btn green darken-3" style="display: none"><i class="fas fa-edit"></i> Update meal</button>
+                    <button class="delete-btn btn red darken-3" style="display: none"><i class="fas fa-trash"></i> Delete meal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--  Calorie counter-->
+    <h3 class="center-align">Total Calories: <span class="total-calories">0</span></h3>
+
+    <!-- List of meal items-->
+    <ul id="item-list" class="collection"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
